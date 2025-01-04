@@ -2,7 +2,11 @@
 import axios from 'axios';
 import { Banner } from './Banner';
 
-const API_URL = 'http://localhost:5000/banners';
+const API_URL =
+  process.env.NODE_ENV === 'production'
+    ? `${window.location.origin}/api/banners`
+    : 'http://localhost:5000/banners';
+
 
 
 export const getBanners = async () => {
