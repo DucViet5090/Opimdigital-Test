@@ -4,7 +4,7 @@ import { Banner } from './Banner';
 
 const API_URL =
   process.env.NODE_ENV === 'production'
-    ? `${window.location.origin}/api/banners`
+    ? `${window.location.origin}/banners`
     : 'http://localhost:5000/banners';
 
 
