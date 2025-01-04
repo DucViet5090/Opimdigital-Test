@@ -4,7 +4,7 @@ import { Banner } from './Banner';
 
 const API_URL =
   process.env.NODE_ENV === 'production'
-    ? `${process.env.URL}/banners`
+    ? `${process.env.REACT_APP_API_URL}/banners`
     : 'http://localhost:5000/banners';
 
 
